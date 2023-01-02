@@ -1,38 +1,51 @@
+* {
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
 .App {
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #EEEEFF;
+  overflow-y: scroll;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about-me-section {
+  position: relative;
+  height: 100%;
+  background: linear-gradient(to bottom, #FB7BA2, #FCE043);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about-me-card {
+  height: 100%;
+  border-radius: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tech-stack-section {
+  height: 60%;
+  background-color: black;
+  margin-bottom: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.section-divider {
+  position: absolute;
+  bottom: 0;
+  aspect-ratio: 900/600;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.waves {
+  background-image: url('./assets/waves1.svg');
+}
+
+@media only screen and (min-width: 1250px) {
+  .section-divider {
+    aspect-ratio: 900/250;
   }
 }
