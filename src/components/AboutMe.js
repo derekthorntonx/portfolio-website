@@ -1,7 +1,7 @@
-function AboutMe() {
+function AboutMe( {aboutSectionIsVisible} ) {
     return (
-        <div className="about-me-card">
-            <h1>HELLO WORLD</h1>
+        <div className={aboutSectionIsVisible ? 'about-me-card' : 'about-me-card hide'}>
+            <h3>Hello, I'm Derek</h3>
         </div>
     )
 }

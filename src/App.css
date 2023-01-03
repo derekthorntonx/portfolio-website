@@ -1,10 +1,11 @@
 @font-face {
-  font-family: Navbar;
-  src: url('./assets/Caveat.ttf');
+  font-family: Main;
+  src: url('./assets/Navbar.ttf');
 }
 
 * {
   margin: 0;
+  font-family: Main;
 }
 
 body {
@@ -22,7 +23,8 @@ body {
 .navbar {
   position: absolute;
   top: 0%;
-  width: 100%;
+  right: 2.5%;
+  width: 95%;
   height: 10%;
   background: rgba(255, 255, 255, 0.07);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -40,13 +42,37 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-family: Navbar;
+  font-family: Main;
   font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .navbar a {
   text-decoration: none;
-  color: white;
+  color: #fffafa;
+}
+
+.navbar li {
+  display: inline-block;
+  position: relative;
+}
+
+.navbar li:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fffafa;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .navbar-resume {
@@ -75,15 +101,18 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.23);
   display: grid;
   place-items: center;
+  transition: 1s;
 }
 
 .projects-section {
-  height: 100%;
-  background-color: #3f80c5;
+  height: auto;
+  background:linear-gradient(180deg, rgba(63, 128, 197, 1) 50%, rgba(12, 59, 107, 1) 100%);
   margin-bottom: 0;
   display: flex;
-  justify-content: center;
-  padding-top: 10%;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15vh;
+  gap: 10vh;
 }
 
 .section-divider {
@@ -107,10 +136,37 @@ body {
 }
 
 .card {
-  height: 50%;
+  height: 35vh;
   width: 85vw;
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.03);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.23);
+  opacity: 0;
+  transition: 1s;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding: 1%;
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.contact-section {
+  margin-top: -0.05%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(12, 59, 107, 1) 0%, rgba(3, 21, 40, 1) 100%);
+  padding-top: 15vh;
+}
+
+.placeholder {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
 }
