@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
-import ProjectShowcase from './components/ProjectShowcase';
+import ProjectOne from './components/ProjectOne';
 
 function App() {
   const aboutMeRef = useRef();
@@ -14,7 +14,7 @@ function App() {
       const entry = entries[0];
       setAboutSectionIsVisible(entry.isIntersecting)
     }, {
-      threshold: 0.80
+      threshold: 0.8
     })
     observer.observe(aboutMeRef.current);
   }, [])
@@ -40,8 +40,7 @@ function App() {
       </section>
       
       <section className='projects-section' id='projects'>
-          <ProjectShowcase />
-          <ProjectShowcase />
+          <ProjectOne />
       </section>
 
       <section className='contact-section' id='contact'>

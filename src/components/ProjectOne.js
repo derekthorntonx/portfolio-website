@@ -1,6 +1,8 @@
+import JobApplication from '../assets/jobapplication.png'
+
 import { useState, useEffect, useRef } from 'react';
 
-function ProjectShowcase() {
+function ProjectOne() {
     const [projectIsVisible, setProjectIsVisible] = useState();
     const projectRef = useRef();
 
@@ -9,22 +11,24 @@ function ProjectShowcase() {
           const entry = entries[0];
           setProjectIsVisible(entry.isIntersecting)
         }, {
-          threshold: 0.85
+          threshold: 1
         })
         observer.observe(projectRef.current);
       }, [])
 
     return (
         <div className={projectIsVisible ? 'card show' : 'card'} ref={projectRef}>
-            <div className='placeholder'>
-
+            <div>
+              <img alt='ProjectOne' src={JobApplication}></img>
             </div>
 
-            <div className='placeholder'>
-
-            </div>
+        <div>
+          Job Application Tracker
+          asdasdasdasdasdasd
+        </div>
+         
         </div>
     )
 }
 
-export default ProjectShowcase;
+export default ProjectOne;
