@@ -6,6 +6,7 @@
 * {
   margin: 0;
   font-family: Main;
+  font-size: 2.3vmax;
 }
 
 body {
@@ -43,7 +44,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: Main;
-  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -88,6 +88,7 @@ body {
   background: linear-gradient(to bottom, #FB7BA2, #FCE043);
   display: flex;
   justify-content: center;
+  z-index: 10;
 }
 
 .about-me-card {
@@ -99,9 +100,43 @@ body {
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.23);
-  display: grid;
-  place-items: center;
-  transition: 1s;
+  display: flex;
+  transition: 0.8s;
+  font-size: 2vh;
+}
+
+.about-me-blurb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vh;
+  gap: 0.5vh;
+}
+
+.about-me-blurb img {
+  height: auto;
+  width: 8vw;
+}
+
+.about-me-blurb, .about-me-blurb h5, .about-me-blurb p {
+  font-size: 2vmax;
+}
+
+h1 {
+  font-size: 3vmax;
+  color: #FCE043
+}
+
+h5 {
+  font-size: 1.5vmax;
+  color: #FB7BA2;
+}
+
+@media only screen and (max-width: 700px) {
+  .about-me-blurb, .about-me-blurb h5, .about-me-blurb p {
+    color: #FB7BA2;
+    font-size: 1.8vmax;
+  }
 }
 
 .projects-section {
@@ -123,15 +158,30 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  z-index: -1;
 }
 
 .waves {
   background-image: url('./assets/waves1.svg');
+  z-index: -1;
 }
 
 @media only screen and (min-width: 1250px) {
   .section-divider {
     aspect-ratio: 900/350;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .about-me-blurb img {
+    height: auto;
+    width: 5.5vw;
+  }
+}
+
+@media only screen and (min-width: 2250px) {
+  .navbar, .navbar a {
+    font-size: 2vw;
   }
 }
 
@@ -170,3 +220,5 @@ body {
   width: 100%;
   border: 1px solid black;
 }
+
+

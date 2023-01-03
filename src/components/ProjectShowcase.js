@@ -9,7 +9,7 @@ function ProjectShowcase() {
           const entry = entries[0];
           setProjectIsVisible(entry.isIntersecting)
         }, {
-          threshold: 0.50
+          threshold: 0.85
         })
         observer.observe(projectRef.current);
       }, [])

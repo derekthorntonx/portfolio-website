@@ -14,7 +14,7 @@ function App() {
       const entry = entries[0];
       setAboutSectionIsVisible(entry.isIntersecting)
     }, {
-      threshold: 0.70
+      threshold: 0.80
     })
     observer.observe(aboutMeRef.current);
   }, [])
