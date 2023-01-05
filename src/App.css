@@ -138,38 +138,6 @@ h5 {
   display: none;
 }
 
-@media only screen and (max-width: 700px) {
-  .about-me-blurb, .about-me-blurb h5, .about-me-blurb p {
-    
-    font-size: 1.8vmax;
-  }
-}
-
-@media only screen and (max-width:360px){
-  .navbar-resume {
-    display: none;
-  }
-
-  .navbar {
-    position: absolute;
-    top: 0%;
-    right: 2.5%;
-    width: 95%;
-    height: 10%;
-    background: rgba(255, 255, 255, 0.07);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.23);
-    border-bottom: none;
-    z-index: 9999;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .about-me-resume {
-    display: block;
-  }
-}
-
 .projects-section {
   height: auto;
   background:linear-gradient(180deg, rgba(63, 128, 197, 1) 50%, rgba(12, 59, 107, 1) 100%);
@@ -177,7 +145,7 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 15vh;
+  padding-top: 12vh;
   gap: 10vh;
 }
 
@@ -211,12 +179,6 @@ h5 {
   }
 }
 
-@media only screen and (min-width: 2250px) {
-  .navbar, .navbar a {
-    font-size: 2vw;
-  }
-}
-
 .card {
   height: 50vh;
   width: 85vw;
@@ -235,9 +197,15 @@ h5 {
   border-radius: 10px;
   object-fit: cover;
   width: 100%;
+  max-height: 50vh;
 }
 
-@media only screen and (min-width: 550px) {
+
+@media only screen and (min-width: 2250px) {
+  .navbar, .navbar a {
+    font-size: 2vw;
+  }
+
   .card {
     height: 50vh;
     width: 85vw;
@@ -279,5 +247,38 @@ h5 {
   width: 100%;
   border: 1px solid black;
 }
+
+@media only screen and (max-width:440px){
+  .navbar-resume {
+    display: none;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 0%;
+    right: 2.5%;
+    width: 95%;
+    height: 10%;
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    border-bottom: none;
+    z-index: 9999;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .about-me-resume {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .about-me-blurb, .about-me-blurb h5, .about-me-blurb p {
+    font-size: 1.8vmax;
+  }
+}
+
+
 
 

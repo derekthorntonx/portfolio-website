@@ -6,7 +6,7 @@ function AboutMe( {aboutSectionIsVisible} ) {
         <div className={aboutSectionIsVisible ? 'about-me-card' : 'about-me-card hide'}>
             <div className="about-me-blurb">
                 <h1>Hi, I'm Derek</h1>
-                <h5>Asipiring Full-stack Web Developer</h5>
+                <h5>Aspiring Full-stack Web Developer</h5>
                 <p style={{width: '85%', textIndent: '5vh'}}>I enjoy nature, fitness, and automating things that
                     probably don't need to be automated. What started
                     as the desire to create my own personal Workout and Travel-log
