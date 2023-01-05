@@ -19,7 +19,7 @@ function ProjectOne() {
     return (
         <div className={projectIsVisible ? 'card show' : 'card'} ref={projectRef}>
             <div>
-              <img alt='ProjectOne' src={JobApplicationTracker}></img>
+              <img alt='ProjectOne' loading="lazy" src={JobApplicationTracker}></img>
             </div>
         <div className='project-description'>
           <p style={{marginBottom: '1%', fontSize: '0.8rem'}}>A full-stack web app created to help track and sort job applications.</p>
