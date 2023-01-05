@@ -151,7 +151,7 @@ h5 {
 
 .section-divider {
   position: absolute;
-  bottom: -1%;
+  bottom: -2%;
   aspect-ratio: 900/600;
   width: 100%;
   background-repeat: no-repeat;
@@ -180,7 +180,7 @@ h5 {
 }
 
 .card {
-  height: 50vh;
+  height: auto;
   width: 85vw;
   background: rgba(255, 255, 255, 0.03);
   border-radius: 16px;
@@ -191,13 +191,13 @@ h5 {
   display: flex;
   flex-direction: column;
   padding: 1%;
+  visibility: hidden;
 }
 
 .card img {
   border-radius: 10px;
-  object-fit: cover;
-  width: 100%;
-  max-height: 50vh;
+  width: 85vw;
+  max-height: 65vh;
 }
 
 
@@ -205,34 +205,16 @@ h5 {
   .navbar, .navbar a {
     font-size: 2vw;
   }
-
-  .card {
-    height: 50vh;
-    width: 85vw;
-    background: rgba(255, 255, 255, 0.03);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.23);
-    opacity: 0;
-    transition: 1s;
-    display: flex;
-    flex-direction: row;
-    padding: 1%;
-  }
-
-  .card img {
-    border-radius: 10px;
-    object-fit: cover;
-    height: 100%;
-  }
 }
 
 .show {
   opacity: 1;
+  visibility: visible;
 }
 
 .hide {
   opacity: 0;
+  visibility: hidden;
 }
 
 .contact-section {
@@ -242,10 +224,28 @@ h5 {
   padding-top: 15vh;
 }
 
-.placeholder {
-  height: 100%;
-  width: 100%;
-  border: 1px solid black;
+.project-links {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.23);
+  padding: 0.5% 1%;
+  font-size: 0.8rem;
+}
+
+.project-links:link, .project-links:visited {
+  color: black;
+}
+
+.project-links:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
 }
 
 @media only screen and (max-width:440px){

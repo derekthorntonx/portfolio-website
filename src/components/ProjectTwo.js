@@ -9,7 +9,7 @@ function ProjectTwo() {
           const entry = entries[0];
           setProjectIsVisible(entry.isIntersecting)
         }, {
-          threshold: 1
+          threshold: 0.8
         })
         observer.observe(projectRef.current);
       }, [])
