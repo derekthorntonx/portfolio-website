@@ -1,13 +1,14 @@
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, Suspense } from 'react';
 import AboutMe from '../components/AboutMe';
 import Contact from '../components/Contact';
-import ProjectOne from '../components/ProjectOne';
-import ProjectTwo from '../components/ProjectTwo';
 
+const ProjectOne = React.lazy(() => import('../components/ProjectOne'));
+const ProjectTwo = React.lazy(() => import('../components/ProjectTwo'));
 
 function Main() {
   const aboutMeRef = useRef();
   const [aboutSectionIsVisible, setAboutSectionIsVisible] = useState();
+
   
 
   useEffect(() => {
@@ -42,8 +43,8 @@ function Main() {
       </section>
       
       <section className='projects-section' id='projects'>
-          <ProjectOne />
-          <ProjectTwo />
+          <Suspense fallback={<div>Loading...</div>}><ProjectOne /></Suspense>
+          <Suspense fallback={<div>Loading...</div>}><ProjectTwo /></Suspense>
 
           <div>Things I'm working on...</div>
       </section>

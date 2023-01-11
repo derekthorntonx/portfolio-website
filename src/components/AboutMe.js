@@ -7,11 +7,7 @@ function AboutMe( {aboutSectionIsVisible} ) {
             <div className="about-me-blurb">
                 <h1>Hi, I'm Derek</h1>
                 <h5>Aspiring Full-stack Web Developer</h5>
-                <p style={{width: '85%', textIndent: '5vh'}}>I enjoy nature, fitness, and automating things that
-                    probably don't need to be automated. What started
-                    as the desire to create my own personal Workout and Travel-log
-                    apps ended up igniting an eagerness to continuously learn
-                    and build.
+                <p style={{width: '85%', textIndent: '5vh'}}> I throughly enjoy the process of planning and creating just about anything, especially when it intersects with my hobbies. Finding new tools and technologies to further my ability to build is what keeps me dedicated to continuously learn.
                 </p>
                 <div style={{width: '35%', display: 'flex', justifyContent: 'space-evenly'}}>
                     <a rel="noopener noreferrer" target="_blank" href="https://github.com/derekthorntonx">

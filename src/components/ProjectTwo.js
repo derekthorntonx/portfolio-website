@@ -22,7 +22,7 @@ function ProjectTwo() {
               <img alt='ProjectTwo' loading="lazy" src={walmartClone}></img>
             </div>
         <div className='project-description'>
-          <p style={{marginBottom: '1%', fontSize: '0.8rem'}}>A full-stack web app created to help track and sort job applications.</p>
+          <p style={{marginBottom: '1%', fontSize: '0.8rem'}}>A React-based mock-up ecommerce clone page. Original reference linked through logo.</p>
           <div style={{display: 'flex', gap: '2%', justifyContent: 'flex-end'}}>
             <a className='project-links' rel="noopener noreferrer" target='_blank' href="https://localhost:3000/walmartClonedetails">Demo</a>
             <a className='project-links' rel="noopener noreferrer" target='_blank' href="https://github.com/derekthorntonx/Walmart-clone">Code</a>

@@ -22,7 +22,7 @@ function ProjectOne() {
               <img alt='ProjectOne' loading="lazy" src={JobApplicationTracker}></img>
             </div>
         <div className='project-description'>
-          <p style={{marginBottom: '1%', fontSize: '0.8rem'}}>A full-stack web app created to help track and sort job applications.</p>
+          <p style={{marginBottom: '1%', fontSize: '0.8rem'}}>A full-stack web app created using MERN to help track and sort job applications.</p>
           <div style={{display: 'flex', gap: '2%', justifyContent: 'flex-end'}}>
             <a className='project-links' rel="noopener noreferrer" target='_blank' href="https://localhost:3000/jobtrackerdetails">Demo</a>
             <a className='project-links' rel="noopener noreferrer" target='_blank' href="https://github.com/derekthorntonx/job-application-manager">Code</a>
