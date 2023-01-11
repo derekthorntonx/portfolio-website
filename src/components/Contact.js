@@ -1,4 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 function Contact() {
     const contactRef = useRef();
@@ -17,9 +20,11 @@ function Contact() {
 
     return (
         <div ref={contactRef} className={contactSectionIsVisible ? 'content-card show' : 'content-card'}>
-            <div style={{fontSize: '0.9rem'}}>Email: derek-thornton@hotmail.ca</div>
-            <div style={{fontSize: '0.9rem'}}>Phone: 647 895 9336</div>
-
+          <div className='contacts'>
+            <div className='contact-wrapper'><FontAwesomeIcon className='fa-2xl' icon={faEnvelope}/><div style={{display: 'flex', placeItems: 'center'}}>derek-thornton@hotmail.ca</div></div>
+            <div className='contact-wrapper'><FontAwesomeIcon className='fa-2xl' icon={faLinkedin}/><div style={{display: 'flex', placeItems: 'center'}}>derek-thornton@hotmail.ca</div></div>
+            <div className='contact-wrapper'><FontAwesomeIcon className='fa-2xl' icon={faGithub}/><div style={{display: 'flex', placeItems: 'center'}}>derek-thornton@hotmail.ca</div></div>
+            </div>
         </div>
     )
 }

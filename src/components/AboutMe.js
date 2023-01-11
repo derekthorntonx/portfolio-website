@@ -1,5 +1,6 @@
 import Github from '../assets/github-mark.svg';
 import LinkedIn from '../assets/linkedin.svg';
+import { Link } from 'react-router-dom';
 
 function AboutMe( {aboutSectionIsVisible} ) {
     return (
@@ -18,7 +19,7 @@ function AboutMe( {aboutSectionIsVisible} ) {
                         <img alt='LinkedIn' src={LinkedIn}/>
                     </a>
                 </div>
-                <div className='about-me-resume'>RESUME</div>
+                <Link to='/resume' target='_blank' className='about-me-resume project-links'>Resume</Link>
             </div>
 
         </div>
