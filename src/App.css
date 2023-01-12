@@ -86,7 +86,7 @@
 }
 
 .sheet p, ul, li {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   text-indent: 5%;
   margin-top: 1%;
   margin-bottom: 2%;
@@ -254,7 +254,7 @@ h5 {
   transition: 1s;
 }
 
-.card img {
+.card img, .sheet img {
   border-radius: 10px;
   width: 80vw;
   max-height: 65vh;
