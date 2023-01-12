@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, Suspense } from 'react';
 import walmartClone from '../assets/walmartClone.png';
 import { Link } from 'react-router-dom';
 
@@ -19,7 +19,9 @@ function ProjectTwo() {
     return (
         <div className={projectIsVisible ? 'card show' : 'card'} ref={projectRef}>
             <div>
-              <img alt='ProjectTwo' loading="lazy" src={walmartClone}></img>
+              <Suspense fallback={<div className='loading'>Loading...</div>}>
+              <img alt='ProjectTwo' src={walmartClone}></img>
+              </Suspense>
             </div>
         <div className='project-description'>
           <p style={{marginBottom: '1%', fontSize: '0.8rem'}}>A React-based mock-up ecommerce clone page. Original reference linked through logo.</p>

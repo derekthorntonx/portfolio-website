@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef, Suspense } from 'react';
 import { Link } from 'react-router-dom';
-import picture from '../assets/jobApp.png';
+import picture from '../assets/lighthouseDesktop.png';
 
 
-function ProjectOne() {
+function ProjectThree() {
     const [projectIsVisible, setProjectIsVisible] = useState();
     const projectRef = useRef();
 
@@ -20,18 +20,18 @@ function ProjectOne() {
     return (
         <div className={projectIsVisible ? 'card show' : 'card'} ref={projectRef}>
             <div>
-              <Suspense fallback={<div className='loading'>Loading...</div>}><img alt='ProjectOne' src={picture}></img></Suspense>
+              <Suspense fallback={<div className='loading'>Loading...</div>}><img alt='ProjectThree' src={picture}></img></Suspense>
             </div>
         <div className='project-description'>
-          <p style={{marginBottom: '1%', fontSize: '0.8rem'}}>A full-stack web app created using MERN to help track and sort job applications.</p>
+          <p style={{marginBottom: '1%', fontSize: '0.8rem'}}>My porfolio site: a responsive, React-based, Single Page Application self-hosted on a local Raspberry Pi.</p>
           <div style={{display: 'flex', gap: '2%', justifyContent: 'flex-end'}}>
             <a className='project-links' rel="noopener noreferrer" target='_blank' href="https://localhost:3000/jobtrackerdetails">Demo</a>
             <a className='project-links' rel="noopener noreferrer" target='_blank' href="https://github.com/derekthorntonx/job-application-manager">Code</a>
-            <Link to='/project1' className='project-links'>Details</Link>
+            <Link to='/project3' className='project-links'>Details</Link>
           </div>
           </div>
         </div>
     )
 }
 
-export default ProjectOne;
+export default ProjectThree;

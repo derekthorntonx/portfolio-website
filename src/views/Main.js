@@ -1,10 +1,11 @@
-import React, { useEffect, useRef, useState, Suspense } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AboutMe from '../components/AboutMe';
+import Contact from '../components/Contact';
+import ProjectOne from '../components/ProjectOne';
+import ProjectTwo from '../components/ProjectTwo';
+import ProjectThree from '../components/ProjectThree';
 
-const ProjectOne = React.lazy(() => import('../components/ProjectOne'));
-const ProjectTwo = React.lazy(() => import('../components/ProjectTwo'));
-const Contact = React.lazy(() => import('../components/Contact'));
 
 function Main() {
   const aboutMeRef = useRef();
@@ -44,16 +45,18 @@ function Main() {
       </section>
       
       <section className='projects-section' id='projects'>
-          <Suspense fallback={<div>Loading...</div>}><ProjectOne /></Suspense>
-          <Suspense fallback={<div>Loading...</div>}><ProjectTwo /></Suspense>
+          <ProjectOne />
+          <ProjectTwo />
+          <ProjectThree />
 
           <Link to='/future-projects' className='project-links' style={{borderRadius: '30px'}}>Things I'm working on...</Link>
       </section>
 
       <section className='contact-section' id='contact'>
-          <Suspense fallback={<div>Loading...</div>}><Contact /></Suspense>
+          <Contact />
       </section>
     </div>
+    
   );
 }
 

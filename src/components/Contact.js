@@ -23,7 +23,11 @@ function Contact() {
           <div className='contacts'>
             <div className='contact-wrapper'><FontAwesomeIcon className='fa-2xl' icon={faEnvelope}/><div style={{display: 'flex', placeItems: 'center'}}>derek-thornton@hotmail.ca</div></div>
             <div className='contact-wrapper'><FontAwesomeIcon className='fa-2xl' icon={faLinkedin}/><div style={{display: 'flex', placeItems: 'center'}}>derek-thornton@hotmail.ca</div></div>
-            <div className='contact-wrapper'><FontAwesomeIcon className='fa-2xl' icon={faGithub}/><div style={{display: 'flex', placeItems: 'center'}}>derek-thornton@hotmail.ca</div></div>
+            <div className='contact-wrapper'>
+              <FontAwesomeIcon className='fa-2xl' icon={faGithub}/>
+              <a rel="noopener noreferrer" target="_blank" href="https://github.com/derekthorntonx" style={{display: 'flex', placeItems: 'center'}}>github.com/derekthorntonx</a>
+              </div>
+        
             </div>
         </div>
     )

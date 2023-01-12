@@ -7,16 +7,27 @@ function JobTracker() {
         <div className='about-me-section'>
             <div className='more-detail-wrapper'>
             <Link to='/'><span style={{color: 'white'}}><FontAwesomeIcon className='fa-lg' icon={faArrowLeft}/></span></Link>
-            <div>
-                <p>My first full-stack application. The original intention was to increase the efficiency of a
-                    process that I was previously managing through Notepad files. Built using as close to the vanilla
-                    MERN tech-stack as possible for the sake of learning.
-
-                    Users can create, filter for key terms, favourite/pin, and delete job applications. Postings are automatically
-                    deleted after 4 months from their creation; although the time-to-deletion can be customized within
-                    the options menu. User accounts are automatically deleted after 3 months of inactivity. These
-                    auto-deletion features were added knowing the intention to make the web app public as a means to
-                    future-proof the database capacity by removing unused or outdated content.
+            <div className='sheet'>
+                <h5>Development Commentary: </h5>
+                <p>Created with the intention of assisting my own job hunting process. Front-end design heavily inspired
+                    by neumorphism and a pastel-like colour-scheme. I was aiming to create visuals that conveyed an almost
+                    plastic toy feel.
+                </p>
+                <p>
+                    My primary motivation was to simply streamline something I would normally do with Notepad files; however, I added
+                    a very simple user authentication system to allow others to use it as well. Originally it was going to utilize Google Auth and Passport,
+                    but I felt that future employers seeking only to open the app for a few moments to click around would not appreciate
+                    needing to link their Google account. This ease of use came at the cost of far more lenient authentication, which was the motivation behind having
+                    accounts and documents auto-delete after a significant period of inactivity.
+                </p>
+                <p>
+                    The tech stack utilized MongoDB, Node.js, and Express for the back-end, and React + vanilla CSS for the front-end.
+                    The logic behind the back-end technologies is primarily due to the ability to program with Javascript when using Node.js,
+                    allowing me to use Javascript for the entire application. MongoDB was chosen for the flexibility first and foremost, as I can easily
+                    add or remove data fields based on future needs. For a program at this scale, the potential processing speed hit using MongoDB compared
+                    to a SQL database was essentially irrelevant. Regarding the front-end, React was chosen due to its flexibility and overall light-weight/less opinionated
+                    nature over other component-based framework/libraries. This factor was important to me because I valued the ability to easily customize the layout
+                    for future implementations.
                 </p>
         
             </div>
