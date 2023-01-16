@@ -26,7 +26,7 @@ function ProjectTwo() {
         <div className='project-description'>
           <p style={{marginBottom: '1%', fontSize: '0.8rem'}}>A React-based mock-up ecommerce clone page. Original reference linked through logo.</p>
           <div style={{display: 'flex', gap: '2%', justifyContent: 'flex-end'}}>
-            <a className='project-links' rel="noopener noreferrer" target='_blank' href="https://localhost:3000/walmartClonedetails">Demo</a>
+            <a className='project-links' rel="noopener noreferrer" target='_blank' href="http://72.140.1.8:3300">Demo</a>
             <a className='project-links' rel="noopener noreferrer" target='_blank' href="https://github.com/derekthorntonx/Walmart-clone">Code</a>
             <Link to='/project2' className='project-links'>Details</Link>
           </div>
