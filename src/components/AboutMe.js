@@ -15,7 +15,7 @@ function AboutMe( {aboutSectionIsVisible} ) {
                         <img alt='Github' src={Github}/>
                     </a>
 
-                    <a rel="noopener noreferrer" target="_blank" href="http://google.com">
+                    <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/derek-thornton-067546262/">
                         <img alt='LinkedIn' src={LinkedIn}/>
                     </a>
                 </div>

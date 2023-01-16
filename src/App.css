@@ -112,10 +112,9 @@
 }
 
 .contacts {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
   height: 100%;
   font-size: 1rem;
 }
@@ -325,7 +324,10 @@ h5 {
 .contact-wrapper {
   display: flex;
   flex-direction: row;
-  gap: 5%;
+}
+
+.contacts a {
+  color: black;
 }
 
 @media only screen and (max-width:440px){
