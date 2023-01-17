@@ -309,6 +309,18 @@ h5 {
   margin-top: 1%;
 }
 
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1rem 1rem auto;
+}
+
+.experience-grid li, ul {
+  text-indent: 0;
+  padding-inline-start: 3%;
+}
+
+
 .more-detail-wrapper {
   margin-top: 5vh;
   height: 90%;
@@ -316,7 +328,6 @@ h5 {
   z-index: 10;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 6fr;
   grid-template-rows: 5% 95%;
   gap: 3%;
 }
@@ -371,6 +382,10 @@ h5 {
   .about-me-blurb, .about-me-blurb h5, .about-me-blurb p {
     font-size: 1.8vmax;
   }
+
+  .experience-grid li {
+    margin-top: 3%;
+  }
 }
 
 @media only screen and (max-width: 360px) {
@@ -379,6 +394,7 @@ h5 {
   }
   
 }
+
 
 
 

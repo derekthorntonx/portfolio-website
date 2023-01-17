@@ -32,7 +32,7 @@ function Main() {
           <li><a href='#projects'>Projects</a></li>
           <li><a href='#contact'>Contact</a></li>
         </ul>
-        <Link to='/resume' target='_blank' className='navbar-resume'>
+        <Link to='/resume'  className='navbar-resume'>
             Resume
         </Link>
       </header>
