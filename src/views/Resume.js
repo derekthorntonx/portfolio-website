@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
-
+import resume from '../assets/DerekThorntonResume.docx';
 
 
 
@@ -10,7 +10,7 @@ function Resume() {
         <div style={{height: 'auto'}} className='about-me-section'>
             <div style={{gridTemplateRows: '2vh auto'}} className='more-detail-wrapper'>
             <Link to='/' style={{gridRow: '1', gridColumn: '1', justifySelf: 'start'}}><span style={{color: 'white', }}><FontAwesomeIcon className='fa-lg' icon={faArrowLeft}/></span></Link>
-            <div style={{gridRow: '1', gridColumn: '1', justifySelf: 'end'}}>download</div>
+            <a href={resume} style={{gridRow: '1', gridColumn: '1', justifySelf: 'end'}} className='download-link' download>Download</a>
             <div style={{height: 'auto', placeSelf: 'auto'}} className='sheet'>
                 <h5 style={{marginBottom:'1.5%'}}>Experience:</h5>
                 <div className='experience-grid'>

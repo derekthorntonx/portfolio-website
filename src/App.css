@@ -395,6 +395,16 @@ h5 {
   
 }
 
+.download-link {
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  background-color: #EEEEFF;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 1rem;
+  padding: 10px;
+}
 
-
-
+.download-link:hover {
+opacity: 0.8;
+}
